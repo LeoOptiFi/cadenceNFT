@@ -28,4 +28,7 @@ print1NFT:
 printNFT:
 	flow scripts execute ./scripts/print_nft.cdc
 
+deployContractToTestnet:
+	flow project deploy --network=testnet
+
  
