@@ -34,8 +34,7 @@ transaction (receiver: Address, nft_id: UInt64){
         
         // Deposit the NFT in the receivers collection
         
-        receiverRef.deposit(token: <-self.transferToken, metadata: self.transferMeta)
-
+        receiverRef.deposit(token: <-self.transferToken)
         log("NFT ID 1 transferred from nftOwner to nftReceiver")
     }
 }
