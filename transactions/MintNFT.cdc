@@ -29,6 +29,7 @@ transaction {
           "bonus": "5",
           "uri": "ipfs://QmdMBBGDsUhJwsJVovZCMbAY8HMnZTRSrLbET6qeS9D823"
         }
+        
         // Use the minter reference to mint an NFT, which deposits
         // the NFT into the collection that is sent as a parameter.
        let newNFT <- self.minterRef.mintNFT(metadata: metadata)
